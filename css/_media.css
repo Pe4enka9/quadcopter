@@ -1,0 +1,185 @@
+@media (max-width: 420px) {
+    html {
+        font-size: 8px;
+    }
+
+    .container {
+        width: 85% !important;
+    }
+
+    header .logo h1,
+    footer .social p {
+        display: none;
+    }
+
+    header > img {
+        display: block;
+    }
+
+    header, footer {
+        width: 100%;
+
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    header, footer {
+        padding: 2rem;
+    }
+
+    footer {
+        gap: 3rem;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    footer nav {
+        align-items: center;
+    }
+
+    footer .contacts {
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    footer .footer-bottom,
+    footer .footer-bottom div {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    form {
+        width: 100% !important;
+        min-width: 0;
+
+        padding: 3rem 2rem;
+        margin: 0;
+    }
+
+    .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slider .slide h2 {
+        width: 70%;
+
+        padding: 2rem;
+
+        font-size: 2.6rem;
+
+        text-align: center;
+
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .history .reservation .reservation-info .content,
+    .history .reservation .rent-info .content-top,
+    .history .reservation .rent-info .content-bottom {
+        flex-direction: column;
+    }
+
+    .rent-form .fields {
+        grid-gap: 2rem !important;
+    }
+
+    .rent .rent-item .img-container .price {
+        opacity: 1;
+    }
+
+    #startButton, #restartButton {
+        width: fit-content;
+    }
+
+    #restartButton {
+        top: 57%;
+    }
+
+    .cards .card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .user-rents-container .user-rent {
+        flex-direction: column;
+    }
+
+    .user-rents-container .user-rent .content .another-info .date {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .user-rents-container .user-rent .img {
+        margin: auto;
+    }
+
+    header nav {
+        width: 0;
+        max-height: 0;
+
+        padding: 0;
+
+        flex-direction: column;
+        gap: 2rem;
+
+        background-color: var(--main);
+
+        z-index: 99;
+        overflow: hidden;
+        transition: max-height 1s ease-out;
+
+        position: absolute;
+        top: 96px;
+        right: 0;
+    }
+
+    header nav.active {
+        width: 100%;
+        max-height: 150px;
+
+        padding: 2rem;
+    }
+
+    .banner {
+        height: fit-content;
+
+        padding: 3rem;
+
+        gap: 5rem;
+    }
+
+    .banner .content {
+        width: 100%;
+
+        padding: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 2.2rem;
+    }
+
+    .banner .content p {
+        font-size: 1.4rem;
+    }
+
+    .banner .btn {
+        width: fit-content;
+    }
+}

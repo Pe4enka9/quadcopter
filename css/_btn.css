@@ -1,0 +1,47 @@
+.btn {
+    width: fit-content;
+    height: fit-content;
+
+    padding: 1rem 1.5rem;
+
+    display: block;
+
+    color: var(--white);
+
+    outline: none;
+    border: none;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    border-radius: var(--radius);
+
+    font-size: var(--btnFontSize);
+    font-weight: var(--btnFontWeight);
+
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+
+.btn.btn-primary {
+    background-color: var(--main);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--mainHover);
+}
+
+.btn.btn-success {
+    background-color: var(--success);
+}
+
+.btn.btn-success:hover {
+    background-color: var(--successHover);
+}
+
+.btn.btn-danger {
+    background-color: var(--danger);
+}
+
+.btn.btn-danger:hover {
+    background-color: var(--dangerHover);
+}

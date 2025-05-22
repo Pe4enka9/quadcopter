@@ -1,0 +1,25 @@
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #70c5ce;
+}
+
+.game {
+    position: relative;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#restartButton {
+    display: none;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

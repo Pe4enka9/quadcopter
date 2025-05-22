@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Бронирование</title>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Логотип">
+        <h1>Квадрокоптер+</h1>
+    </a>
+
+    <nav>
+        <a href="history.html">История бронирований</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="rental-points.html">Точки проката</a>
+        <a href="account.html">Личный кабинет</a>
+    </nav>
+
+    <img src="img/icons/menu.svg" alt="Меню" id="mainMenu">
+</header>
+
+<div class="container">
+    <main>
+        <div class="banner mb-5">
+            <div class="content">
+                <h2>Забронируйте квадрокоптер уже сегодня — откройте новые горизонты для съемок!</h2>
+
+                <p>Легко и быстро арендуйте лучшие модели для любых целей: от съемки природы до профессиональных
+                    видеопроектов. Не упустите шанс — выберите свой идеальный квадрокоптер прямо сейчас!</p>
+            </div>
+
+            <a href="#" class="btn btn-danger">Забронировать</a>
+        </div>
+
+        <form class="rent-form mb-5">
+            <h3>Бронирование</h3>
+
+            <div class="quadcopter-info">
+                <h4>Данные об квадрокоптере</h4>
+
+                <div class="fields">
+                    <div class="input-container">
+                        <label for="id">Идентификатор квадрокоптера</label>
+                        <input type="text" name="id" id="id" placeholder="432435">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="name">Название квадрокоптера</label>
+                        <input type="text" name="name" id="name" placeholder="Mavic Pro">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="brand">Марка квадрокоптера</label>
+                        <input type="text" name="brand" id="brand" placeholder="DJI">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="booking_date">Дата и время бронирования</label>
+                        <input type="date" name="booking_date" id="booking_date">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="return_date">Дата и время возврата</label>
+                        <input type="date" name="return_date" id="return_date">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="price">Стоимость бронирования за день/час</label>
+                        <input type="number" name="price" id="price" placeholder="100">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="rental_point">Точка проката</label>
+                        <input type="text" name="rental_point" id="rental_point" placeholder="Пушкина 30">
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-info">
+                <h4>Данные о клиенте</h4>
+
+                <div class="fields">
+                    <div class="input-container">
+                        <label for="first_name">Имя</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Иван">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="last_name">Фамилия</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Иванов">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="patronymic">Отчество</label>
+                        <input type="text" name="patronymic" id="patronymic" placeholder="Иванович">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="phone_number">Номер телефона</label>
+                        <input type="tel" name="phone_number" id="phone_number" placeholder="+7 (000) 000-00-00">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="passport">Паспортные данные</label>
+                        <input type="text" name="passport" id="passport" placeholder="95 20 000000">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="credit_card">Банковская карта</label>
+                        <input type="text" name="credit_card" id="credit_card" placeholder="1234 5678 9123 4567">
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-amount">
+                <p>Финальная стоимость:</p>
+                <h4>0 &#8381;</h4>
+            </div>
+
+            <button type="submit" class="btn btn-success">Забронировать</button>
+        </form>
+
+        <section class="rent">
+            <div class="header mb-3">
+                <h2>Аренда квадрокоптеров</h2>
+                <p>Выберите идеальный дрон для ваших задач — от любительской съемки до профессионального
+                    использования.</p>
+            </div>
+
+            <form class="search mb-3">
+                <div class="fields">
+                    <div class="input-container">
+                        <label for="drone_class">Класс</label>
+                        <select name="drone_class" id="drone_class">
+                            <option value="" selected hidden>Выберите класс</option>
+                            <option value="">Профессиональный</option>
+                            <option value="">Любительский</option>
+                            <option value="">Спорт</option>
+                            <option value="">Мини</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="drone_brand">Марка</label>
+                        <select name="brand" id="drone_brand">
+                            <option value="" selected hidden>Выберите марку</option>
+                            <option value="">DJI</option>
+                            <option value="">Autel</option>
+                            <option value="">Parrot</option>
+                            <option value="">Holy Stone</option>
+                            <option value="">Yuneec</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="model">Модель</label>
+                        <select name="model" id="model">
+                            <option value="" selected hidden>Выберите модель</option>
+                            <option value="">Mavic 3</option>
+                            <option value="">Phantom 4</option>
+                            <option value="">Mini 3 Pro</option>
+                            <option value="">Inspire 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Найти квадрокоптер</button>
+            </form>
+
+            <div class="rent-container">
+                <a href="#" class="rent-item">
+                    <div class="img-container">
+                        <img src="img/quadcopter.png" alt="Квадрокоптер">
+                        <p class="price">3500 &#8381;/час</p>
+                    </div>
+
+                    <div class="content">
+                        <h3>Phantom X5 Pro</h3>
+                        <p>Профессиональный квадрокоптер с камерой 4K и увеличенным временем полета.</p>
+
+                        <div class="list">
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>4K камера</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>30 мин. полета</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>GPS</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>20 км/ч</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Забронировать</button>
+                    </div>
+                </a>
+
+                <div class="rent-item">
+                    <div class="img-container">
+                        <img src="img/quadcopter.png" alt="Квадрокоптер">
+                        <p class="price">3500 &#8381;/час</p>
+                    </div>
+
+                    <div class="content">
+                        <h3>Phantom X5 Pro</h3>
+                        <p>Профессиональный квадрокоптер с камерой 4K и увеличенным временем полета.</p>
+
+                        <div class="list">
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>4K камера</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>30 мин. полета</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>GPS</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>20 км/ч</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Забронировать</button>
+                    </div>
+                </div>
+
+                <div class="rent-item">
+                    <div class="img-container">
+                        <img src="img/quadcopter.png" alt="Квадрокоптер">
+                        <p class="price">5000 &#8381;/час</p>
+                    </div>
+
+                    <div class="content">
+                        <h3>Phantom X5 Pro</h3>
+                        <p>Профессиональный квадрокоптер с камерой 4K и увеличенным временем полета.</p>
+
+                        <div class="list">
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>4K камера</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>30 мин. полета</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>GPS</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>20 км/ч</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Забронировать</button>
+                    </div>
+                </div>
+
+                <div class="rent-item">
+                    <div class="img-container">
+                        <img src="img/quadcopter.png" alt="Квадрокоптер">
+                        <p class="price">4000 &#8381;/час</p>
+                    </div>
+
+                    <div class="content">
+                        <h3>Phantom X5 Pro</h3>
+                        <p>Профессиональный квадрокоптер с камерой 4K и увеличенным временем полета.</p>
+
+                        <div class="list">
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>4K камера</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>30 мин. полета</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>GPS</p>
+                            </div>
+
+                            <div class="list-item">
+                                <img src="img/icons/marker.svg" alt="Галочка">
+                                <p>20 км/ч</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-top">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип">
+            <h1>Квадрокоптер+</h1>
+        </a>
+
+        <nav>
+            <a href="history.html">История бронирований</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="rental-points.html">Точки проката</a>
+            <a href="account.html">Личный кабинет</a>
+        </nav>
+
+        <div class="contacts">
+            <div class="phone-number">
+                <img src="img/icons/phone.svg" alt="Телефон">
+                <a href="tel:+78001111111">8 (800) 111-11-11</a>
+            </div>
+
+            <div class="social">
+                <p>Соц. сети</p>
+
+                <div class="links">
+                    <a href="#"><img src="img/icons/vk.svg" alt="ВКонтакте"></a>
+                    <a href="#"><img src="img/icons/telegram.svg" alt="Телеграм"></a>
+                    <a href="#"><img src="img/icons/instagram.svg" alt="Инстаграм"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <a href="#">Пользовательское соглашение</a>
+
+        <div>
+            <a href="#">Политика конфиденциальности</a>
+            <p>&copy; Квадрокоптер+, 2024</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/sidebar.js"></script>
+<script src="js/rent.js"></script>
+
+</body>
+</html>

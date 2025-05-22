@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/account.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Логотип">
+        <h1>Квадрокоптер+</h1>
+    </a>
+
+    <nav>
+        <a href="history.html">История бронирований</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="rental-points.html">Точки проката</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="login.html">Выйти</a>
+    </nav>
+
+    <img src="img/icons/menu.svg" alt="Меню" id="mainMenu">
+</header>
+
+<div class="container">
+    <img src="img/icons/menu-black.svg" alt="Меню" id="menu">
+
+    <aside>
+        <button type="button" class="btn active tab-button" data-tab="tab1">Личная информация</button>
+        <button type="button" class="btn tab-button" data-tab="tab2">Мои банковские карты</button>
+        <button type="button" class="btn tab-button" data-tab="tab3">История бронирований</button>
+        <button type="button" class="btn tab-button" data-tab="tab4">Игра</button>
+    </aside>
+
+    <main>
+        <h2 class="mb-5">Личный кабинет</h2>
+
+        <section class="user-info mb-5 tab-content" id="tab1">
+            <div class="content">
+                <h3>Иванов Иван</h3>
+                <p>Баллы: <span>1250</span></p>
+                <p>Количество бронирований: 7</p>
+            </div>
+        </section>
+
+        <section class="cards tab-content hidden" id="tab2">
+            <div class="card">
+                <div class="content">
+                    <p>Номер карты: <span>**** **** **** 1234</span></p>
+                    <p>Тип карты: <span>Мир</span></p>
+                    <h4>Активна</h4>
+                </div>
+
+                <button type="button" class="btn btn-danger">Удалить</button>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <p>Номер карты: <span>**** **** **** 1234</span></p>
+                    <p>Тип карты: <span>Visa</span></p>
+                    <h4>Закончился срок обслуживания карты</h4>
+                </div>
+
+                <button type="button" class="btn btn-danger">Удалить</button>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <p>Номер карты: <span>**** **** **** 1234</span></p>
+                    <p>Тип карты: <span>MasterCard</span></p>
+                    <h4>Активна</h4>
+                </div>
+
+                <button type="button" class="btn btn-danger">Удалить</button>
+            </div>
+
+            <button type="button" class="btn btn-success">Добавить банковскую карту</button>
+        </section>
+
+        <section class="user-rents tab-content hidden" id="tab3">
+            <div class="user-rents-container">
+                <div class="user-rent">
+                    <div class="img">
+                        <img src="img/quadcopter.png" alt="Квадрокоптер">
+                    </div>
+
+                    <div class="content">
+                        <h4>Mavic Pro combo</h4>
+                        <p>Идентификатор квадрокоптера: <span>4759348293</span></p>
+                        <p>Марка: <span>DJI</span></p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisl enim,
+                            ultricies in risus eu, aliquam lacinia felis. Donec vulputate leo a justo pharetra, sed
+                            ultricies risus pellentesque. Maecenas ornare commodo orci non mattis. Sed libero nibh,
+                            sodales tempus mi eu, viverra posuere lacus. Donec faucibus libero sit amet massa euismod
+                            auctor.</p>
+
+                        <div class="another-info">
+                            <div class="date">
+                                <p>Дата / время бронирования: <span>14.12.2024 13:17</span></p>
+                                <p>Дата / время возврата: <span>15.12.2024 13:17</span></p>
+                            </div>
+
+                            <p>Выбранная точка проката: <span>ул. Ивана Ярыгина, 24А</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game tab-content hidden" id="tab4">
+            <button class="btn btn-success" id="startButton">Начать игру</button>
+            <button class="btn btn-success" id="restartButton">Начать заново</button>
+            <canvas id="gameCanvas"></canvas>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <div class="footer-top">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип">
+            <h1>Квадрокоптер+</h1>
+        </a>
+
+        <nav>
+            <a href="history.html">История бронирований</a>
+            <a href="booking.html">Бронирование</a>
+            <a href="rental-points.html">Точки проката</a>
+            <a href="account.html">Личный кабинет</a>
+        </nav>
+
+        <div class="contacts">
+            <div class="phone-number">
+                <img src="img/icons/phone.svg" alt="Телефон">
+                <a href="tel:+78001111111">8 (800) 111-11-11</a>
+            </div>
+
+            <div class="social">
+                <p>Соц. сети</p>
+
+                <div class="links">
+                    <a href="#"><img src="img/icons/vk.svg" alt="ВКонтакте"></a>
+                    <a href="#"><img src="img/icons/telegram.svg" alt="Телеграм"></a>
+                    <a href="#"><img src="img/icons/instagram.svg" alt="Инстаграм"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <a href="#">Пользовательское соглашение</a>
+
+        <div>
+            <a href="#">Политика конфиденциальности</a>
+            <p>&copy; Квадрокоптер+, 2024</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/sidebar.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/game.js"></script>
+<script src="js/account-sidebar.js"></script>
+
+</body>
+</html>

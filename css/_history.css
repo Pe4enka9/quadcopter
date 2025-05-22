@@ -1,0 +1,110 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.history p span {
+    color: var(--black);
+
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.history .reservation {
+    width: 100%;
+
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: var(--white);
+
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    border-radius: var(--radius);
+
+    transition: .3s ease;
+}
+
+.history .reservation:hover {
+    transform: translateY(-.5rem);
+}
+
+.history .reservation hr {
+    border: none;
+    border-bottom: .1rem solid var(--border);
+}
+
+.history .reservation .reservation-info {
+    width: 100%;
+
+    padding: 3rem;
+
+    border-bottom: .1rem solid #808080;
+}
+
+.history .reservation .reservation-info h4 {
+    color: var(--main);
+}
+
+.history .reservation .reservation-info .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history .reservation .rent-info {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.history .reservation .rent-info .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.history .reservation .rent-info .content-top,
+.history .reservation .rent-info .content-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history .reservation .rent-info .content-bottom {
+    align-items: center;
+}
+
+.history .reservation .rent-info .content .content-left,
+.history .reservation .rent-info .content .content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.history .reservation .rent-info h4 {
+    color: var(--success);
+}
+
+.history .reservation .reservation-info,
+.history .reservation .rent-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.history .reservation .rent-info .img {
+    width: 25rem;
+    height: 25rem;
+
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    border-radius: var(--radius);
+
+    overflow: hidden;
+}
+
+.history .reservation .rent-info .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

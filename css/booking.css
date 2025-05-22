@@ -1,0 +1,32 @@
+.rent-form {
+    width: 70%;
+}
+
+.rent-form > div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rent-form .fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3rem;
+}
+
+.rent-form .final-amount {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.rent-form .final-amount p {
+    color: var(--black);
+}
+
+.rent-form .final-amount h4 {
+    color: var(--success);
+}

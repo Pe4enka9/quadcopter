@@ -1,0 +1,24 @@
+:root {
+    --background: #F5F7FA;
+    --main: #0D2C54;
+    --mainHover: #081C36;
+    --firstAccent: #00C2CB;
+    --firstAccentHover: #009AA6;
+    --secondAccent: #FF6B35;
+    --secondAccentHover: #E65F2E;
+    --success: #4CAF50;
+    --successHover: #388E3C;
+    --danger: #F44336;
+    --dangerHover: #D32F2f;
+    --text: #888;
+    --white: #fff;
+    --black: #000;
+    --border: #ccc;
+
+    --fontSize: 1.6rem;
+    --fontWeight: 400;
+    --btnFontSize: 1.6rem;
+    --btnFontWeight: 400;
+
+    --radius: 1rem;
+}

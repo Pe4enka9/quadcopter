@@ -1,0 +1,33 @@
+.reviews .review {
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: #fff;
+
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    border-radius: var(--radius);
+}
+
+.reviews .review .text {
+    font-style: italic;
+}
+
+.reviews .review .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews .review .rating img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.reviews .swiper-pagination {
+    margin-top: 40px;
+}

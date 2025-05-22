@@ -1,0 +1,62 @@
+header {
+    width: 80%;
+
+    margin: 0 auto;
+    padding: 1rem 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--main);
+
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    text-decoration: none;
+}
+
+header .logo img {
+    width: 8rem;
+    height: 8rem;
+}
+
+header .logo h1 {
+    color: var(--white);
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header nav a {
+    color: var(--white);
+
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight);
+
+    text-decoration: none;
+    transition: color .2s;
+}
+
+header nav a:hover {
+    color: var(--border);
+}
+
+header > img {
+    width: 5rem;
+    height: 5rem;
+
+    display: none;
+}

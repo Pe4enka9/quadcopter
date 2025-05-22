@@ -1,0 +1,28 @@
+.user-info {
+    padding: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--white);
+
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    border-radius: var(--radius);
+
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.user-info .content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.user-info .content p span {
+    color: var(--main);
+
+    font-size: inherit;
+    font-weight: inherit;
+}

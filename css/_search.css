@@ -1,0 +1,11 @@
+.search {
+    width: 70%;
+}
+
+.search .fields {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+}
