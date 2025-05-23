@@ -55,3 +55,15 @@ form .input-container input:focus,
 form .input-container select:focus {
     border-color: var(--firstAccent);
 }
+
+form .input-container .error {
+    display: none;
+
+    color: var(--danger);
+
+    font-size: 1.4rem;
+}
+
+form .input-container .error.active {
+    display: block;
+}

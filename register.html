@@ -32,41 +32,49 @@
             <div class="input-container">
                 <label for="first_name">Имя</label>
                 <input type="text" name="first_name" id="first_name" placeholder="Иван">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="last_name">Фамилия</label>
                 <input type="text" name="last_name" id="last_name" placeholder="Иванов">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="patronymic">Отчество</label>
                 <input type="text" name="patronymic" id="patronymic" placeholder="Иванович">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="passport">Паспортные данные</label>
                 <input type="text" name="passport" id="passport" placeholder="95 20 000000">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="phone_number">Телефон</label>
                 <input type="tel" name="phone_number" id="phone_number" placeholder="+7 (000) 000-00-00">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="birthdate">Дата рождения</label>
                 <input type="date" name="birthdate" id="birthdate">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="password">Пароль</label>
                 <input type="password" name="password" id="password" placeholder="••••••••">
+                <p class="error"></p>
             </div>
 
             <div class="input-container">
                 <label for="password_repeat">Повтор пароль</label>
                 <input type="password" name="password_repeat" id="password_repeat" placeholder="••••••••">
+                <p class="error"></p>
             </div>
 
             <button type="submit" class="btn btn-success">Зарегистрироваться</button>
@@ -114,7 +122,9 @@
     </div>
 </footer>
 
+<script src="https://unpkg.com/imask"></script>
 <script src="js/sidebar.js"></script>
+<script src="js/register.js"></script>
 
 </body>
 </html>
