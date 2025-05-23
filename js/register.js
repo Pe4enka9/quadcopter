@@ -12,7 +12,26 @@ const errorMessages = {
     patronymic: 'Только буквы, а также дефис или апостроф',
     passport: 'Введите в формате XX XX XXXXXX',
     password: 'От 6 до 20 латинских букв и цифр без пробелов и спецсимволов',
+    password_repeat: 'Пароли не совпадают',
 };
+
+function passwordValidation() {
+    const password = document.getElementById('password');
+    const passwordRepeat = document.getElementById('password_repeat');
+    const error = passwordRepeat.parentElement.querySelector('.error');
+
+    if (password.value !== passwordRepeat.value) {
+        error.textContent = errorMessages.password_repeat;
+        error.classList.add('active');
+        
+        return false;
+    } else {
+        error.textContent = '';
+        error.classList.remove('active');
+
+        return true;
+    }
+}
 
 const inputs = document.querySelectorAll('input');
 
@@ -20,9 +39,15 @@ let isValid = true;
 
 inputs.forEach(input => {
     input.addEventListener('input', () => {
+        isValid = true;
         const error = input.parentElement.querySelector('.error');
 
         if (input.name === 'patronymic' && input.value === '') return;
+
+        if (input.name === 'password_repeat') {
+            isValid = passwordValidation();
+            return;
+        }
 
         if (input.value === '') {
             isValid = false;
@@ -59,6 +84,13 @@ document.querySelector('form').addEventListener('submit', function (e) {
     inputs.forEach(input => {
         if (input.value === '') {            
             isValid = false;
+
+            if (input.name === 'patronymic') return;
+            
+            const error = input.parentElement.querySelector('.error');
+            error.textContent = 'Поле обязательно для заполнения';
+            error.classList.add('active');
+
             return;
         }
     });
